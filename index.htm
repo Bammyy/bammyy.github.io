@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html lang="en-GB">
   <head>
+    <!-- <style>
+      img {
+        width: 100%;
+      }
+    </style> -->
+
+    <!----------------------------------------------------------------------------------------------->
+
     <!--   <style>
        a:link {
         color: green;
@@ -40,6 +48,25 @@
       a:hover,
       a:active {
         background-color: red;
+      }
+    </style> -->
+
+    <!----------------------------------------------------------------------------------------------->
+
+    <!--<style>
+      body {
+        background-image: url("background.png");
+        --background-repeat: no-repeat;--
+      }
+    </style>-->
+
+    <!--- <style>
+      body {
+        background-image: url("cat.jpg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        background-size: 100% 100%;
       }
     </style> -->
   </head>
@@ -215,6 +242,59 @@
 
         <h2 id="C4" style="background-color: yellow">Chapter 4</h2>
         <p>This chapter starts with a ...</p>
+
+        <img
+          src="C:/Users/ghost/Pictures/Cat2.png"
+          alt="cat2"
+          title="Me Ow"
+          width="250"
+          height="200" />
+
+        <img
+          src="C:/Users/ghost/Pictures/nyan cat.gif"
+          alt="nyan cat"
+          style="float: right"
+          title=":D"
+          width="250"
+          height="200"
+          usemap="#workmap" />
+
+        <map name="workmap">
+          <area
+            shape="rect"
+            coords="60,50,190,150"
+            href="C:/Users/ghost/Pictures/nyan cat.gif"
+            onclick="myFunction()"
+          />
+        </map>
+
+        <script>
+          function myFunction() {
+            alert("You clicked the nyan cat!");
+          }
+        </script>
+
+        <p style="background-image: url('cat.jpg')">
+          You can specify background images<br />
+          for any visible HTML element.<br />
+          In this example, the background image<br />
+          is specified for a p element.<br />
+          By default, the background-image<br />
+          will repeat itself in the direction(s)<br />
+          where it is smaller than the element<br />
+          where it is specified. (Try resizing the<br />
+          browser window to see how the<br />
+          background image behaves.
+        </p>
+
+        <picture>
+          <source media="(min-width: 650px)" srcset="cat.jpg" />
+          <source
+            media="(min-width: 465px)"
+            srcset="C:/Users/ghosts/Pictures/Cat2.png"
+          />
+          <img src="cat.jpg" />
+        </picture>
 
         <p align="center">
           <button onclick="document.location='index.htm'">Back to Top</button>
