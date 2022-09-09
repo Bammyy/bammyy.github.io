@@ -44,6 +44,7 @@
         text-decoration: none;
         display: inline-block;
       }
+
       a:hover,
       a:active {
         background-color: red;
@@ -233,7 +234,8 @@
         </h1>
 
         <p>test</p>
-        <a href="=mailto:someone@example.com">Send</a> <br />
+        <a href="=mailto:someone@example.com" title="Send an email">Send</a>
+        <br />
 
         <a href="https://www.youtube.com" title="Go to Youtube"
           >Visit Youtube</a
@@ -243,14 +245,30 @@
         <p>This chapter starts with a ...</p>
 
         <img
-          src="Cat2.png"
+          src="C:/Users/ghost/Pictures/Cat2.png"
           alt="cat2"
           title="Me Ow"
           width="250"
-          height="200" />
+          height="200"
+          usemap="#catmap" />
+
+        <map name="#catmap">
+          <area
+            shape="rect"
+            coords="40,20,200,190"
+            href="C:/Users/ghost/Pictures/Cat2.png"
+            onclick="catFunction()"
+          />
+        </map>
+
+        <script>
+          function catFunction() {
+            alert("Meow");
+          }
+        </script>
 
         <img
-          src="nyan cat.gif"
+          src="C:/Users/ghost/Pictures/nyan cat.gif"
           alt="nyan cat"
           style="float: right"
           title=":D"
@@ -262,10 +280,15 @@
           <area
             shape="rect"
             coords="60,50,190,150"
-            href="nyan cat.gif"
+            href="C:/Users/ghost/Pictures/nyan cat.gif"
             onclick="myFunction()"
           />
         </map>
+
+        <script>
+          alert("You have a virus");
+          alert("Just kidding!");
+        </script>
 
         <script>
           function myFunction() {
@@ -273,7 +296,12 @@
           }
         </script>
 
-        <p style="background-image: url('cat.jpg')">
+        <p
+          style="background-image: url('cat.jpg')"
+          ;
+          background-repeat:
+          no-repeat;
+        >
           You can specify background images<br />
           for any visible HTML element.<br />
           In this example, the background image<br />
@@ -286,14 +314,14 @@
           background image behaves.
         </p>
 
-        <picture>
+        <!-- <picture>
           <source media="(min-width: 650px)" srcset="cat.jpg" />
           <source
             media="(min-width: 465px)"
-            srcset="Cat2.png"
+            srcset="C:/Users/ghosts/Pictures/Cat2.png"
           />
           <img src="cat.jpg" />
-        </picture>
+        </picture> -->
 
         <p align="center">
           <button onclick="document.location='index.htm'">Back to Top</button>
