@@ -8,6 +8,93 @@
       href="C:/Users/ghost/Pictures/favicon.ico"
     />
 
+    <style>
+      .button-5 {
+        align-items: center;
+        background-clip: padding-box;
+        background-color: #fa6400;
+        border: 1px solid transparent;
+        border-radius: 0.25rem;
+        box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+        box-sizing: border-box;
+        color: #fff;
+        cursor: pointer;
+        display: inline-flex;
+        font-family: system-ui, -apple-system, system-ui, "Helvetica Neue",
+          Helvetica, Arial, sans-serif;
+        font-size: 16px;
+        font-weight: 600;
+        justify-content: center;
+        line-height: 1.25;
+        margin: 0;
+        min-height: 3rem;
+        padding: calc(0.875rem - 1px) calc(1.5rem - 1px);
+        position: relative;
+        text-decoration: none;
+        transition: all 250ms;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        vertical-align: baseline;
+        width: auto;
+      }
+
+      .button-5:hover,
+      .button-5:focus {
+        background-color: #fb8332;
+        box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+      }
+
+      .button-5:hover {
+        transform: translateY(-1px);
+      }
+
+      .button-5:active {
+        background-color: #c85000;
+        box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+        transform: translateY(0);
+      }
+
+      table,
+      th,
+      td {
+        border: 1px solid black;
+        border-collapse: none;
+        border-radius: 10px;
+        border-style: solid;
+        border-color: #00ffff;
+      }
+      th,
+      th {
+        text-align: left;
+      }
+      table {
+        border-spacing: 10px;
+      }
+      tr:nth-child(even) {
+        background-color: #d6eeee;
+      }
+      tr {
+        border-bottom: 1px solid #ddd;
+      }
+      tr:hover {
+        background-color: #79b9b9;
+      }
+
+      .city {
+        background-color: tomato;
+        color: white;
+        border: 2px solid black;
+        margin: 20px;
+        padding: 20px;
+      }
+
+      .note {
+        font-size: 120%;
+        color: red;
+      }
+    </style>
+
     <!-- <style>
       img {
         width: 100%;
@@ -325,9 +412,183 @@
           <img src="cat.jpg" />
         </picture>
 
+        <table align="center">
+          <caption>
+            <b style="font-size: 25px; font-family: tahoma" ;>Footballers</b>
+          </caption>
+          <colgroup>
+            <col span="3" style="background-color: rgb(177, 226, 241)" />
+          </colgroup>
+          <thead>
+            <tr style="height: 35px">
+              <th style="width: 175px">Footballer</th>
+              <th>Club</th>
+              <th>Country</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <a href="https://en.wikipedia.org/wiki/Lionel_Messi"
+                  >Lionel Messi</a
+                >
+              </td>
+              <td>PSG</td>
+              <td>Argentina</td>
+            </tr>
+          </tbody>
+          <tbody>
+            <tr>
+              <td>
+                <a href="https://en.wikipedia.org/wiki/Cristiano_Ronaldo"
+                  >Cristiano Ronaldo</a
+                >
+              </td>
+              <td>Manchester United</td>
+              <td>Portugal</td>
+            </tr>
+          </tbody>
+          <tbody>
+            <td>
+              <a href="https://en.wikipedia.org/wiki/Neymar">Neymar Jr.</a>
+            </td>
+            <td>PSG</td>
+            <td>Brazil</td>
+          </tbody>
+          <tbody>
+            <td>
+              <a href="https://en.wikipedia.org/wiki/Robert_Lewandowski"
+                >Robert Lewandowski</a
+              >
+            </td>
+            <td>Barcelona</td>
+            <td>Poland</td>
+          </tbody>
+          <tbody>
+            <td>
+              <a href="https://en.wikipedia.org/wiki/Kevin_De_Bruyne"
+                >Kevin De Bruyne</a
+              >
+            </td>
+            <td>Man City</td>
+            <td>Belgium</td>
+          </tbody>
+        </table>
+        <br />
+
+        <table align="center">
+          <caption>
+            <b style="font-size: 25px; font-family: tahoma">People</b>
+          </caption>
+          <thead>
+            <tr>
+              <!--colspan="2" makes the column have the size of 2.-->
+              <th style="height: 25px; width: 50px">Name</th>
+              <th>Age</th>
+            </tr>
+          </thead>
+          <tbody colspan="2" style="background-color: #d6eeee">
+            <tr>
+              <td style="width: 175px">Eminem</td>
+              <td>49</td>
+            </tr>
+            <tr>
+              <!--rowspan="2" makes the row have the size of 2.-->
+              <td>Johnny Depp</td>
+              <td>59</td>
+            </tr>
+            <tr style="background-color: pink">
+              <td>Gwen Stefani</td>
+              <td>49</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <ul>
+          <li>Coffee</li>
+          <li>Tea</li>
+          <li>Milk</li>
+        </ul>
+
+        <ol>
+          <li>Coffee</li>
+          <li>Tea</li>
+          <li>Milk</li>
+        </ol>
+
+        <dl>
+          <dt>Coffee</dt>
+          <dd>- black hot drink</dd>
+          <dt>Milk</dt>
+          <dd>- white cold drink</dd>
+          <dt>Water</dt>
+          <dd>- everyone's favourite!</dd>
+        </dl>
+
+        <ul style="list-style-type: square">
+          <li>Coffee</li>
+          <li>Tea</li>
+          <li>Milk</li>
+        </ul>
+
+        <ul>
+          <li>Water</li>
+          <li>
+            Lucozade
+            <ul>
+              <li>Original</li>
+              <li>Orange</li>
+            </ul>
+          </li>
+          <li>
+            Coke
+            <ul>
+              <li>Zero</li>
+              <li>Original</li>
+              <li>Vanilla</li>
+            </ul>
+          </li>
+        </ul>
+
+        <ol type="I" start="5">
+          <li>Coffee</li>
+          <li>Tea</li>
+          <li>Milk</li>
+        </ol>
+
+        <!-- To add multiple classes, just add a space (class name). E.g. class="(name) (name)"-->
+
+        <button onclick="hideFunction()">Hide elements</button>
+
+        <div class="city">
+          <h2>London</h2>
+          <p>London is the <span class="note">capital</span> of England.</p>
+        </div>
+
+        <div class="city">
+          <h2>Tokyo</h2>
+          <p>Tokyo is the <span class="note">capital</span> of Japan.</p>
+        </div>
+
+        <div class="city">
+          <h2>Paris</h2>
+          <p>Paris is the <span class="note">capital</span> of France.,</p>
+        </div>
+
         <p align="center">
-          <button onclick="document.location='index.htm'">Back to Top</button>
+          <button class="button-5" onclick="document.location='index.htm'">
+            Back to Top
+          </button>
         </p>
+
+        <script>
+          function hideFunction() {
+            var x = document.getElementsByClassName("city");
+            for (var i = 0; i < x.length; i++) {
+              x[i].style.display = "none";
+            }
+          }
+        </script>
 
         <body>
           <html></html></body></bdo
