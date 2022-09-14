@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html lang="en-GB">
   <head>
+    <meta name="description" content="Bammy's first website">
+    <meta name="author" content="Bammy">
+    <!-- <meta http-equiv="refresh" content="30"> refreshes website  --> 
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Bammy's site</title>
     <link
       rel="icon"
@@ -9,6 +15,13 @@
     />
 
     <style>
+      #myHeader {
+        background-color: lightblue;
+        color: black;
+        padding: 40px;
+        text-align: center;
+      }
+
       .button-5 {
         align-items: center;
         background-clip: padding-box;
@@ -560,6 +573,8 @@
 
         <button onclick="hideFunction()">Hide elements</button>
 
+        <h1 id="myHeader">Cities</h1>
+
         <div class="city">
           <h2>London</h2>
           <p>London is the <span class="note">capital</span> of England.</p>
@@ -575,12 +590,6 @@
           <p>Paris is the <span class="note">capital</span> of France.,</p>
         </div>
 
-        <p align="center">
-          <button class="button-5" onclick="document.location='index.htm'">
-            Back to Top
-          </button>
-        </p>
-
         <script>
           function hideFunction() {
             var x = document.getElementsByClassName("city");
@@ -589,6 +598,58 @@
             }
           }
         </script>
+
+        <h2 id="myHeader2">Hello World</h2>
+        <button onclick="displayResult()">Change text</button>
+
+        <script>
+          function displayResult() {
+            document.getElementById("myHeader2").innerHTML = "Have a nice day!";
+          }
+        </script>
+
+        <iframe
+          src="index.htm"
+          style="height: 200px; width: 300px; border: 2px solid red"
+          title="iFrame example"
+          name="iframe_a"
+        ></iframe>
+
+        <p>
+          <a href="www.w3schools.com" target="iframe_a">W3Schools.com</a>
+        </p>
+
+        <p id="time"></p>
+
+        <!--<script>
+          document.getElementById("time").innerHTML = Date();
+        </script>  -->
+
+        <script type="text/javascript"> 
+        function display_c(){
+        var refresh=1000; // Refresh rate in milli seconds
+        mytime=setTimeout('display_ct()',refresh)
+        }
+        
+        function display_ct() {
+        var x = new Date()
+        document.getElementById('ct').innerHTML = x;
+        display_c();
+        }
+        </script>
+        
+        <noscript>Sorry, your browser does not support JavaScript!</noscript>
+
+        <body onload=display_ct();>
+        <span id='ct' ></span>
+        
+        
+
+        <p align="center">
+          <button class="button-5" onclick="document.location='index.htm'">
+            Back to Top
+          </button>
+        </p>
 
         <body>
           <html></html></body></bdo
