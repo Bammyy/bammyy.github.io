@@ -15,6 +15,45 @@
     />
 
     <style>
+      .left1 {
+  background-color: #2196F3;
+  padding: 20px;
+  float: left;
+  width: 20%; /* The width is 20%, by default */
+}
+
+.main1 {
+  background-color: #f1f1f1;
+  padding: 20px;
+  float: left;
+  width: 10%; /* The width is 60%, by default */
+}
+
+.right1 {
+  background-color: #04AA6D;
+  padding: 20px;
+  float: left;
+  width: 10%; /* The width is 20%, by default */
+}
+
+
+
+      .left1, .right1 {
+        float: left;
+        width: 20%,
+      }
+
+      .main1 {
+        float: left;
+        width: 60%;
+      }
+
+      @media screen and (max-width: 800px) {
+        .left1, .main1, .right1 {
+          width: 100%; 
+        }
+      }
+
       #myHeader {
         background-color: lightblue;
         color: black;
@@ -647,8 +686,49 @@
         <body onload=display_ct();>
         <span id='ct' ></span>
         
+        <picture title="resize me">
+          <source srcset="cat.jpg" media="(max-width: 600px">
+          <source srcset="cat2.png" media="(max-width: 1500px)">
+          <source srcest="nyan cat.gif">
+          <img src="Cat2.png" alt="Cat" style="width:auto;">
+        </picture>
         
+        <h1 style="font-size:10vw;">Responsive Text</h1>
 
+        <div class="left1">
+          <p>Left Menu</p>
+        </div>
+
+        <div class="main1">
+          <p>Main Content</p>
+        </div>
+
+        <div class="right1">
+          <p>Right Content</p>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <p>Save the document by pressing <kbd>Ctrl + S</kbd></p>
+
+        <p> Message from my computer:</p>
+        <p><samp>FIle not found.<br> Press F1 to continue.</samp></p>
+
+        <pre>
+          <code>
+            x=5;
+            y=6;
+            z = x + y;
+          </code>
+        </pre>
+
+        <p> The area of a triangle: 1/2 x <var>b</var> x <var>h</var>, where <var>b</var> is the base, and <var>h</var> is the vertical height. </p>
+
+        
         <p align="center">
           <button class="button-5" onclick="document.location='index.htm'">
             Back to Top
